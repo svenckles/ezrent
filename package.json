@@ -1,20 +1,26 @@
 {
   "name": "ezrent",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/svenckles/ezrent.git"
+},
   "bin": {
     "ezrent": "./dist/cli.js"
   },
   "scripts": {
     "build": "tsc",
-    "test": "jest"
+    "test": "jest",
+    "prepublishOnly": "npm run build && npm test"
   },
   "files": [
-    "dist"
+    "dist",
+    "README.md"
   ],
   "keywords": [],
-  "author": "",
+  "author": "Sven",
   "license": "ISC",
   "devDependencies": {
     "@types/commander": "^2.12.5",
