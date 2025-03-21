@@ -1,0 +1,37 @@
+{
+  "name": "ezrent",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "ezrent": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/commander": "^2.12.5",
+    "@types/jest": "^29.5.14",
+    "@types/luxon": "^3.4.2",
+    "@types/node": "^22.13.11",
+    "jest": "^29.7.0",
+    "luxon": "^3.5.0",
+    "ts-jest": "^29.2.6",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "commander": "^13.1.0",
+    "csv-parser": "^3.2.0",
+    "fs": "0.0.1-security",
+    "path": "^0.12.7",
+    "postcode": "^5.1.0"
+  }
+}
